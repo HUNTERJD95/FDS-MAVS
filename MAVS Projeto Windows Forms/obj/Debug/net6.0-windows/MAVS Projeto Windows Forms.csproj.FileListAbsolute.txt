@@ -1,0 +1,26 @@
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\MAVS Projeto Windows Forms.exe
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\MAVS Projeto Windows Forms.deps.json
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\MAVS Projeto Windows Forms.runtimeconfig.json
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\MAVS Projeto Windows Forms.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\MAVS Projeto Windows Forms.pdb
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.csproj.AssemblyReference.cache
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.csproj.GenerateResource.cache
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.AssemblyInfoInputs.cache
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.AssemblyInfo.cs
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.csproj.CoreCompileInputs.cache
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\refint\MAVS Projeto Windows Forms.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.pdb
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.genruntimeconfig.cache
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\ref\MAVS Projeto Windows Forms.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS_Projeto_Windows_Forms.Login.resources
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.csproj.CopyComplete
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS_Projeto_Windows_Forms.Menu.resources
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS_Projeto_Windows_Forms.Properties.Resources.resources
