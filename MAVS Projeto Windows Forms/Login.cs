@@ -31,7 +31,7 @@ namespace MAVS_Projeto_Windows_Forms
             string password = passwordBox.Text;
            
             // caso não haja input
-            if (username== string.Empty || password == string.Empty)
+            if (username == string.Empty || password == string.Empty)
             {
                 MessageBox.Show("Username ou Password não foram preenchidas", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -39,7 +39,7 @@ namespace MAVS_Projeto_Windows_Forms
 
             // envia a query para o database manager
             string sqlQuery = "select * from Funcionarios where username='" + username + "' and password=HASHBYTES('SHA2_512', '" + password + "')";
-            SqlDataReader dr = DatabaseManager.Instance.Query(sqlQuery);
+            SqlDataReader dr  = DatabaseManager.Instance.Query(sqlQuery);
             
             // Se leitura da BD coincidir com tabela executa if
             if (dr.Read())
@@ -55,7 +55,7 @@ namespace MAVS_Projeto_Windows_Forms
             else
             {
                 dr.Close();
-                MessageBox.Show("No Account found ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username ou Password incorretos! ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -100,6 +100,11 @@ namespace MAVS_Projeto_Windows_Forms
             {
                 loginButton.PerformClick();
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

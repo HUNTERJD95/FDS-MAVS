@@ -24,3 +24,4 @@ C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\bin\Debug\net6.0-wind
 C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS Projeto Windows Forms.csproj.CopyComplete
 C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS_Projeto_Windows_Forms.Menu.resources
 C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS_Projeto_Windows_Forms.Properties.Resources.resources
+C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\obj\Debug\net6.0-windows\MAVS_Projeto_Windows_Forms.form_registo.resources
