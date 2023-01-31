@@ -1,8 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace MAVS_Projeto_Windows_Forms
 {
     internal static class Program
     {
-        
         [STAThread]
         static void Main()
         {

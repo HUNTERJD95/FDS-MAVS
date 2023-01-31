@@ -1,5 +1,6 @@
 using System.Data.SqlClient;
 using System.Data.Sql;
+using MAVS_Projeto_Windows_Forms.Domain;
 
 namespace MAVS_Projeto_Windows_Forms
 {
@@ -105,6 +106,36 @@ namespace MAVS_Projeto_Windows_Forms
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void usernameBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Funcionario.ValidarUsername(usernameBox.Text))
+            {
+                ep_Username.SetError(usernameBox, "Login Inválido");
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(ep_Username.GetError(usernameBox)))
+                {
+                    ep_Username.Clear();
+                }
+            }
+        }
+
+        private void passwordBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!Funcionario.ValidarPassword(passwordBox.Text))
+            {
+                ep_Password.SetError(passwordBox, "Formato de Password Inválido");
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(ep_Username.GetError(passwordBox)))
+                {
+                    ep_Password.Clear();
+                }
+            }
         }
     }
 }

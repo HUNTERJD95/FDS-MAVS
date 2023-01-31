@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace MAVS_Projeto_Windows_Forms
 {
-    public sealed class DatabaseManager
+    public sealed class DatabaseManager // Deprecated
     {
         private static DatabaseManager? instance;
         // private static readonly object padlock = new object();
@@ -23,13 +23,9 @@ namespace MAVS_Projeto_Windows_Forms
 
         DatabaseManager()
         {
-
-            string projectDirectory = Directory.GetParent(workingDirectory).Parent.FullName;
-            Console.WriteLine(projectDirectory);
            
-
             // Jonas Path:
-            connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\Database1.mdf"";Integrated Security=True"); ;
+            connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\cs_ba\Desktop\FDS-MAVS\MAVS Projeto Windows Forms\BaseDados\Database1.mdf"";Integrated Security=True"); ;
             // Para funcionar na vossa máquina teem que colocar o vosso path
             // @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""O VOSSO PATH"";Integrated Security=True"); ;
 

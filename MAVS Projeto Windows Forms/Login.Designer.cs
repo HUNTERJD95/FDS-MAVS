@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.usernameBox = new System.Windows.Forms.TextBox();
             this.passwordBox = new System.Windows.Forms.TextBox();
@@ -37,6 +38,10 @@
             this.passwordCheckBox = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.registerLabel = new System.Windows.Forms.LinkLabel();
+            this.ep_Username = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ep_Password = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ep_Username)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ep_Password)).BeginInit();
             this.SuspendLayout();
             // 
             // usernameBox
@@ -46,6 +51,7 @@
             this.usernameBox.Size = new System.Drawing.Size(258, 23);
             this.usernameBox.TabIndex = 0;
             this.usernameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usernameBox_KeyDown);
+            this.usernameBox.Validating += new System.ComponentModel.CancelEventHandler(this.usernameBox_Validating);
             // 
             // passwordBox
             // 
@@ -55,6 +61,7 @@
             this.passwordBox.TabIndex = 1;
             this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
             this.passwordBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordBox_KeyDown);
+            this.passwordBox.Validating += new System.ComponentModel.CancelEventHandler(this.passwordBox_Validating);
             // 
             // label1
             // 
@@ -127,6 +134,16 @@
             this.registerLabel.Text = "Sem Registo? Cadastre-se agora!";
             this.registerLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // ep_Username
+            // 
+            this.ep_Username.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.ep_Username.ContainerControl = this;
+            // 
+            // ep_Password
+            // 
+            this.ep_Password.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.ep_Password.ContainerControl = this;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -147,6 +164,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ep_Username)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ep_Password)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +181,7 @@
         private CheckBox passwordCheckBox;
         private Label label3;
         private LinkLabel registerLabel;
+        private ErrorProvider ep_Username;
+        private ErrorProvider ep_Password;
     }
 }
