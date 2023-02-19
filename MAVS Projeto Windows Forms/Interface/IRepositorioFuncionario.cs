@@ -1,26 +1,21 @@
-﻿using MAVS_Projeto_Windows_Forms.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MAVS_Projeto_Windows_Forms.Dominio;
 
 namespace MAVS_Projeto_Windows_Forms.Interface
 {
     public interface IRepositorioFuncionario
     {
-        int ObterTotalDeFuncionarios();
+        IEnumerable<Funcionario> ObterFuncionarios();
 
-        bool AdicionarFuncionario(Funcionario funcionario);
+        Funcionario? ObterFuncionarioPorId(int id);
+
+        void AdicionarFuncionario(Funcionario funcionario);
 
         void AtualizarFuncionario(Funcionario funcionario);
 
-        void ApagarFuncionario(int funcionarioId);
+        void RemoverFuncionario(int id);
 
-        Funcionario[] ObterTodosFuncionarios();
+        Funcionario? Login(string nomeUtilizador, string password);
 
-        Funcionario[] ObterPorLogin(int login);
-
-        bool AutenticarFuncionario (string login, string password);
+        bool NomeUtilizadorExiste(string nomeUtilizador);
     }
 }

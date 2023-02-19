@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Une3DMExFjjBfyAANI5pMQE/9qe4XLW3t3wDwjsNY72R6bjjmMClZ9OI/qItzMOqduBqmYolhrNBc2ii7N9jSQ==",
+  "dgSpecHash": "gJ57/Ua8/bN8iUYgx6XdyrGs+7wMJCN50WFsjQIonvd6I5ekzUBwsXWjIqRlKEA1pw3yFLeYaFiezjFglT1z5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\cs_ba\\Desktop\\FDS-MAVS\\MAVS Projeto Windows Forms\\MAVS Projeto Windows Forms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cs_ba\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\cs_ba\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\cs_ba\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\cs_ba\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\cs_ba\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\cs_ba\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

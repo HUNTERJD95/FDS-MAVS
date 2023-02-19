@@ -1,16 +1,10 @@
-﻿using System.ComponentModel;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Net.Mail;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Net.Mail;
 using System.ComponentModel.DataAnnotations;
+using MAVS_Projeto_Windows_Forms.Repositorio;
 
-namespace MAVS_Projeto_Windows_Forms.Domain
+namespace MAVS_Projeto_Windows_Forms.Dominio
 {
+    // Classe Funcionario
     public class Funcionario
     {
         [Key]
@@ -21,70 +15,45 @@ namespace MAVS_Projeto_Windows_Forms.Domain
         public string Email { get; set; }
         public DateTime DataRegisto { get; set;  }
 
-/*        public Funcionario() { }
-
-        public Funcionario(string nome, string nomeUtilizador, string password, string email)
-        {
-            Nome = nome;
-            NomeUtilizador = nomeUtilizador;
-            Password = password;
-            Email = email;
-        }*/
-
-       /* public static Funcionario CreateNew(string nome, string username, string password, string email)
-        {
-            return new Funcionario(nome, username, password, email);
-        }*/
-
+        // verifica em loop dentro do input se cada caracter é uma letra ou se contém um "espaço"
         public static bool ValidarNome(string nome)
         {
-            Regex regex = new Regex(
-                "^(\\b[A-Za-z]*\\b\\s+\\b[A-Za-z]*\\b+\\.[A-Za-z])$",
-                RegexOptions.IgnoreCase |
-                RegexOptions.CultureInvariant |
-                RegexOptions.IgnorePatternWhitespace|
-                RegexOptions.Compiled
-            );
-
-            return regex.IsMatch(nome);
+            if (string.IsNullOrEmpty(nome)) { return false; }
+            return nome.All(c => char.IsLetter(c) || c == ' ');
         }
 
-        public static bool ValidarUsername(string username)
+        // Validação de username (Se for null ou vazia e se tamanho > 3, não aceita)
+        public static bool ValidarUsername(string nomeUtilizador)
         {
-            return !string.IsNullOrEmpty(username) && username.Trim().Length > 3;
+            return !string.IsNullOrEmpty(nomeUtilizador) && nomeUtilizador.Length > 3;
         }
 
-        public static bool ValidarPassword(string password)
+        // Validação de password (Auto explicativa através das strings)
+        public static string? ValidarPassword(string password)
         {
-            // https://regexlib.com/REDetails.aspx?regexp_id=1111
-            // at least 1 character
-            // at least 1 number
-            // at least 1 special character
-            // at least 1 uppercase letter
-            // at least 1 lowercase letter
-            // at least 8 characters in length
-            // at most 30 characters in length
-            Regex regex = new Regex(
-                "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,30}$",
-                RegexOptions.IgnoreCase
-                | RegexOptions.CultureInvariant
-                | RegexOptions.IgnorePatternWhitespace
-                | RegexOptions.Compiled
-            );
-
-            return regex.IsMatch(password);
+            if (string.IsNullOrEmpty(password)) { return "A password esta vazia!"; }
+            if (password.Length < 8 || password.Length > 30) { return "A password tem de ter entre 8 a 30 caracteres!"; }
+            if (!password.Any(c => char.IsUpper(c))) { return "A password tem de ter pelo menos 1 maiuscula!"; }
+            if (!password.Any(c => char.IsLower(c))) { return "A password tem de ter pelo menos 1 minuscula!"; }
+            if (!password.Any(c => char.IsNumber(c))) { return "A password tem de ter pelo menos 1 numero!"; }
+            if (!password.Any(c => char.IsSymbol(c) || char.IsPunctuation(c))) { return "A password tem de ter pelo menos 1 simbolo!"; }
+            return null;
         }
 
+        // Valida se a label "confirmarPassword" tem o mesmo valor que a label "Password"
         public static bool ValidarConfirmacaoPassword(string password, string confirmacao)
         {
             return password.Equals(confirmacao);
         }
 
+        // Validar email com recurso a método inbutido "MailAdress"
         public static bool ValidarEmail(string email)
         {
-            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
-
-            return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
+            try { 
+                var mailAddress = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException) { return false; }
         }
     }
 }
